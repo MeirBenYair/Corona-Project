@@ -1,5 +1,5 @@
 
-# Covid 19 Project. Made by Meir Ben Yair who studies, at INT College.
+# Covid 19 Project. 
 
 
 ## Table of contents
@@ -9,6 +9,7 @@
 * Power bi
 * SSIS ETL
 * Return data with ml exercise,made with PYTON
+* Contact info
 
 
 ## General info
@@ -55,10 +56,21 @@ shows the ten countries with the highest number of Confirmed / Deaths.
 
 ## SSIS ETL
 
+## Contact info
+
+#### Made by Meir Ben Yair.
+
+Student at INT College
 
 
-
+Mail and Phone Number : 
 ```
-$ cd ../lorem
-$ npm install
-$ npm start
+mby777701@gmail.com
+```
+```
+0584777028
+```
+[Linkedin profile](https://www.linkedin.com/in/meir-ben-yair-63a218225/)
+
+
+
