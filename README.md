@@ -43,8 +43,13 @@ The title automatically changes by country.
 ### The Second page:
 It shows a Corona data comparison of the last three weeks. And if there is an increase in Confirmed / Deaths. It marks the country in red.
 
+![page2 pb](https://user-images.githubusercontent.com/93455805/141199988-06fa1ebf-f5b9-42e2-928f-20bc24984812.JPG)
+
+
 ### The Third page:
 shows the ten countries with the highest number of Confirmed / Deaths.
+
+![page3 pb](https://user-images.githubusercontent.com/93455805/141200001-5e2ffe7c-fe2a-4363-8c0f-5fc7c8f7f123.JPG)
 
 
 
