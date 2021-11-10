@@ -37,17 +37,20 @@ It's contain 3 csv files: Confirmed Cases, Deaths, and Recovered.You can downloa
 shows General data of the corona virus from around the world, or by specific countries. By cumulative date and daily date.
 The title automatically changes by country.
 
-![page1 pb]![page1 pb](https://user-images.githubusercontent.com/93455805/141142413-f5f7cf96-04cf-481c-b9bf-fa4abbbeb5a3.JPG)
+![page1 pb](https://user-images.githubusercontent.com/93455805/141142413-f5f7cf96-04cf-481c-b9bf-fa4abbbeb5a3.JPG)
+
 
 ### The Second page:
-shows the ten countries with the highest number of Confirmed / Deaths.
-
-![page2 pb](https://user-images.githubusercontent.com/93455805/141142423-b5e40a26-a743-4803-9ef5-a1b4ea35d325.JPG)
-
-## The Third page:
 It shows a Corona data comparison of the last three weeks. And if there is an increase in Confirmed / Deaths. It marks the country in red.
 
-![page3 pb](https://user-images.githubusercontent.com/93455805/141142434-db979da4-6436-4adc-afdd-8aba7397417e.JPG)
+![page2 pb](https://user-images.githubusercontent.com/93455805/141199988-06fa1ebf-f5b9-42e2-928f-20bc24984812.JPG)
+
+
+### The Third page:
+shows the ten countries with the highest number of Confirmed / Deaths.
+
+![page3 pb](https://user-images.githubusercontent.com/93455805/141200001-5e2ffe7c-fe2a-4363-8c0f-5fc7c8f7f123.JPG)
+
 
 
 ## SSIS ETL
