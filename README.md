@@ -49,7 +49,8 @@ I connected the three tables. To create the fact table. And I connected the keys
 Another sub-step within the ETL process was the creation of a DIM DATE table as a separate date table.
 ### Step number two:
 At this stage i created the relationships between the DIM tables and the FACT tables (one-to-many relationship). And of course created hierarchies in the various tables as needed. 
-####The Star Schme model looks like this:
+#### The Star Schme model looks like this:
+![Star scaime](https://user-images.githubusercontent.com/93455805/141657535-2960adf2-a9ec-4c90-bcbe-7fc2ae8fdad2.JPG)
 
 
 ### The First page: 
