@@ -1,5 +1,5 @@
 
-# Covid 19 Project. Made by Meir Ben Yair who studies, at INT College.
+# Covid 19 ETL processes And dashboards. 
 
 
 ## Table of contents
@@ -9,6 +9,7 @@
 * Power bi
 * SSIS ETL
 * Return data with ml exercise,made with PYTON
+* Contact info
 
 
 ## General info
@@ -23,16 +24,37 @@ Project is created with:
 * Jupyter Notebook.
 * Power bi
 * SSIS
-* MySQL server	
+* MS SQL	
 
 ## Data Sources
+I used three csv for the projec:-
+
+* time_series_covid19_confirmed_global.csv
+* time_series_covid19_deaths_global.csv
+* time_series_covid19_recovered_global.csv
+
+All three are taken from:
 [github link](https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series)
 
 
-## Power Bi
-The Power Bi project takes live data on covid 19, and analyzes and presents them.
-It's contain 3 csv files: Confirmed Cases, Deaths, and Recovered.You can download the power bi and conitent files and open it on your own computer.
+# Power Bi
+##### The Power Bi project takes live data on covid 19, and analyzes and presents them.
+It contains the files from above.
+You can download the power bi file and open it on your own computer.
 
+## Steps in project execution
+### Step number one: 
+Was the ETL process that done in Power Query Editor in Power BI. extracted the database From the source above.I cleaned up the information and removed, among other things, columns that were not relevant to the data analysis.I added to each table a column called Status.
+I connected the three tables. To create the fact table. And I connected the keys from the other tables to it.
+Another sub-step within the ETL process was the creation of a DIM DATE table as a separate date table.
+![dim date](https://user-images.githubusercontent.com/93455805/141657326-8c401f3a-6be3-4e8f-8bea-fc616f309cb5.JPG)
+### Step number two:
+At this stage i created the relationships between the DIM tables and the FACT tables (one-to-many relationship). And creation hierarchies in the various tables as needed. 
+#### The Star Schme model looks like this:
+![Star scaime](https://user-images.githubusercontent.com/93455805/141657535-2960adf2-a9ec-4c90-bcbe-7fc2ae8fdad2.JPG)
+### Step number three:
+is to build and design the reports in POWER BI.
+At the report building stage,I divided the report into three pages.
 ### The First page: 
 shows General data of the corona virus from around the world, or by specific countries. By cumulative date and daily date.
 The title automatically changes by country.
@@ -47,18 +69,33 @@ It shows a Corona data comparison of the last three weeks. And if there is an in
 
 
 ### The Third page:
-shows the ten countries with the highest number of Confirmed / Deaths.
+It shows the ten countries with the highest number of Confirmed / Deaths.
 
 ![page3 pb](https://user-images.githubusercontent.com/93455805/141200001-5e2ffe7c-fe2a-4363-8c0f-5fc7c8f7f123.JPG)
+
+#### In the process of building the reports I used DAX  and MESURES, such as:
+SWITCH ,CALCULATE,Variables,RANKX,VALUES
+,DIVIDE,MAX,DATEADD,if,COUNTX,All,SUMX
 
 
 
 ## SSIS ETL
 
+## Contact info
+
+#### Made by Meir Ben Yair.
+
+Student at INT College
 
 
-
+Mail and Phone Number : 
 ```
-$ cd ../lorem
-$ npm install
-$ npm start
+mby777701@gmail.com
+```
+```
+0584777028
+```
+[Linkedin profile](https://www.linkedin.com/in/meir-ben-yair-63a218225/)
+
+
+
