@@ -47,6 +47,9 @@ You can download the power bi file and open it on your own computer.
 Was the ETL process that done in Power Query Editor in Power BI. extracted the database From the source above.I cleaned up the information and removed, among other things, columns that were not relevant to the data analysis.I added to each table a column called Status.
 I connected the three tables. To create the fact table. And I connected the keys from the other tables to it.
 Another sub-step within the ETL process was the creation of a DIM DATE table as a separate date table.
+### Step number two:
+At this stage i created the relationships between the DIM tables and the FACT tables (one-to-many relationship). And of course created hierarchies in the various tables as needed. 
+####The Star Schme model looks like this:
 
 
 ### The First page: 
