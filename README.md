@@ -80,6 +80,14 @@ SWITCH ,CALCULATE,Variables,RANKX,VALUES
 
 
 ## SSIS ETL
+##### The SSIS project takes live data on covid 19,through Python script and uploads them to DHW.
+It contains the files from above.
+You can download the SSIS file and open it on your own computer.
+
+## Steps in project execution
+### Step number one:
+Build the three files in Python script.
+
 
 ## Contact info
 
