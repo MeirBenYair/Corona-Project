@@ -59,19 +59,18 @@ At the report building stage,I divided the report into three pages.
 shows General data of the corona virus from around the world, or by specific countries. By cumulative date and daily date.
 The title automatically changes by country.
 
-![page1 pb](https://user-images.githubusercontent.com/93455805/141142413-f5f7cf96-04cf-481c-b9bf-fa4abbbeb5a3.JPG)
-
+![page1](https://user-images.githubusercontent.com/93455805/141700624-0e92b085-59dc-4e3c-b4ca-f0b8a3c5b88e.JPG)
 
 ### The Second page:
 It shows a Corona data comparison of the last three weeks. And if there is an increase in Confirmed / Deaths. It marks the country in red.
 
-![page2 pb](https://user-images.githubusercontent.com/93455805/141199988-06fa1ebf-f5b9-42e2-928f-20bc24984812.JPG)
+![page2](https://user-images.githubusercontent.com/93455805/141700620-39f3c0f3-a2fa-4c8d-848f-fc2931f57838.JPG)
 
 
 ### The Third page:
 It shows the ten countries with the highest number of Confirmed / Deaths.
 
-![page3 pb](https://user-images.githubusercontent.com/93455805/141200001-5e2ffe7c-fe2a-4363-8c0f-5fc7c8f7f123.JPG)
+![page3](https://user-images.githubusercontent.com/93455805/141700623-c2bb6882-169a-427a-9bb6-2df3e1f6513a.JPG)
 
 #### In the process of building the reports I used DAX  and MESURES, such as:
 SWITCH ,CALCULATE,Variables,RANKX,VALUES
@@ -81,12 +80,18 @@ SWITCH ,CALCULATE,Variables,RANKX,VALUES
 
 ## SSIS ETL
 ##### The SSIS project takes live data on covid 19,through Python script and uploads them to DHW.
-It contains the files from above.
-You can download the SSIS file and open it on your own computer.
 
-## Steps in project execution
-### Step number one:
-Build the three files in Python script.
+#### Steps in project execution
+
+### Extraction :
+The first step is: to Build three files in Python script, of Conformed,deaths and Recovered.And arrange the data and add a column named Status.
+
+### Transformation :
+To be sure that no double information was entered, I used a lookap component that passes only the new Corona information to the destination.
+
+### Loading:
+For this stage I built a new database. And three tables. And there I load the information from ssis. 
+### Schedule:
 
 
 ## Contact info
