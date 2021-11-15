@@ -47,13 +47,16 @@ You can download the power bi file and open it on your own computer.
 Was the ETL process that done in Power Query Editor in Power BI. extracted the database From the source above.I cleaned up the information and removed, among other things, columns that were not relevant to the data analysis.I added to each table a column called Status.
 I connected the three tables. To create the fact table. And I connected the keys from the other tables to it.
 Another sub-step within the ETL process was the creation of a DIM DATE table as a separate date table.
+
 ![dim date](https://user-images.githubusercontent.com/93455805/141657326-8c401f3a-6be3-4e8f-8bea-fc616f309cb5.JPG)
+
 ### Step number two:
 At this stage i created the relationships between the DIM tables and the FACT tables (one-to-many relationship). And creation hierarchies in the various tables as needed. 
 #### The Star Schme model looks like this:
 ![Star scaime](https://user-images.githubusercontent.com/93455805/141657535-2960adf2-a9ec-4c90-bcbe-7fc2ae8fdad2.JPG)
 ### Step number three:
-is to build and design the reports in POWER BI.
+Is to build and design the reports in POWER BI.
+
 At the report building stage,I divided the report into three pages.
 ### The First page: 
 shows General data of the corona virus from around the world, or by specific countries. By cumulative date and daily date.
@@ -79,7 +82,7 @@ SWITCH ,CALCULATE,Variables,RANKX,VALUES
 
 
 ## SSIS ETL
-##### The SSIS project takes live data on covid 19,through Python script and uploads them to DHW.
+##### The SSIS project takes live data on covid 19,through Python script and loads the data into the Data Warehouse system.
 
 #### Steps in project execution
 
