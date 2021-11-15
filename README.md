@@ -27,7 +27,7 @@ Project is created with:
 * MS SQL	
 
 ## Data Sources
-I used three csv for the projec:-
+I used three csv for the projec:
 
 * time_series_covid19_confirmed_global.csv
 * time_series_covid19_deaths_global.csv
@@ -86,13 +86,20 @@ SWITCH ,CALCULATE,Variables,RANKX,VALUES
 ### Extraction :
 The first step is: to Build three files in Python script, of Conformed,deaths and Recovered.And arrange the data and add a column named Status.
 
+![py](https://user-images.githubusercontent.com/93455805/141704618-b308be3b-e93c-4e14-a14f-3547548a38e8.JPG)
+
 ### Transformation :
 To be sure that no double information was entered, I used a lookap component that passes only the new Corona information to the destination.
 
 ### Loading:
 For this stage I built a new database. And three tables. And there I load the information from ssis. 
+![db](https://user-images.githubusercontent.com/93455805/141704619-9d01cd9c-0568-4f77-9f45-14245caf193c.JPG)
+![db1](https://user-images.githubusercontent.com/93455805/141704613-abfd296f-2b27-471b-8a93-0ff123d59680.JPG)
+
 ### Schedule:
 
+
+![job (1)](https://user-images.githubusercontent.com/93455805/141704616-12272944-fc56-434a-bfb9-181d29af3047.JPG)
 
 ## Contact info
 
