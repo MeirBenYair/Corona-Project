@@ -108,8 +108,6 @@ For this stage I built a new database. And three tables. And there I load the in
 
 #### Made by Meir Ben Yair.
 
-Student at INT College
-
 
 Mail and Phone Number : 
 ```
